@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --textColor: #000000;
+    --mainBackground: #f1eeee;
+    --titleColor: var(--textColor);
+    --infoFont: 'Roboto', san-serif;
+    --infoHeaderFont: 'Ubuntu', san-serif;
+    --titleFont: 'Lobster', cursive;
+    --quoteFont: 'Cormorant Garamond', serif;
+    --imgCaptionColor: #535252;
+    --linkColor: #0000ff;
+}
+
+
+body {
+    text-align: center;
+    height: 100vh;
+    padding: 30px;
+    color: var(--textColor);
+}
+
+#main {
+    padding: 25px;
+    background: var(--mainBackground);
+    margin: auto;
+}
+
+#title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: var(--titleFont);
+    font-size: 25px;
+    color: var(--textColor);
+}
+
+#image {
+    max-width: 100%;
+    max-height: 550px;
+    min-height: 150px;
+    height: auto;
+}
+
+#img-caption {
+    margin: auto;
+    max-width: 500px;
+    color: var(--imgCaptionColor)
+}
+
+#tribute-info {
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    font-family: var(--infoFont);
+    letter-spacing: 2px;
+    color: var(--textColor);
+}
+
+#tribute-info h3 {
+    font-family: var(--infoHeaderFont);
+    font-size: 22px;
+    letter-spacing: 0px;
+}
+
+#tribute-info ul {
+    text-align: left;
+    margin-left: 65px;
+}
+
+#tribute-info ul li {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: var(--textColor);
+}
+
+.quote-about-ali {
+    margin: auto;
+    max-width: 300px;
+    letter-spacing: 1px;
+    font-family: var(--quoteFont);
+    color: #111111;
+    font-style: italic;
+    font-size: 20px;
+}
+
+strong {
+    color: var(--textColor);
+    font-style: normal;
+    font-size: 22px;
+}
+
+.moreInfo {
+    margin: auto;
+    color: var(--textColor);
+    font-size: 17px;
+}
+
+#tribute-link {
+    text-decoration: none;
+    font-family: var(--quoteFont);
+    font-size: 25px;
+}
+
+#tribute-link:hover {
+    color: var(--linkColor);
+    text-decoration: underline;
+    opacity: 1;
+}
+
+#tribute-link:visited {
+    color: red;
+}
+
+#tribute-link:visited:hover {
+    color: var(--linkColor);
+    opacity: 0;
+}
